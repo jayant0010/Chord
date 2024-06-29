@@ -1,0 +1,31 @@
+Last login: Sun Oct 23 22:35:23 on ttys000
+saijayanthchidirala@darth ~ % cd Desktop/chord4
+saijayanthchidirala@darth chord4 % erl
+Erlang/OTP 25 [erts-13.0.4] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1] [jit] [dtrace]
+
+Eshell V13.0.4  (abort with ^G)
+1> c(ftables).
+{ok,ftables}
+2> c(controller).
+{ok,controller}
+3> c(nodeoper).
+{ok,nodeoper}
+4> c(main).
+{ok,main}
+5> main:start(1000,10).
+ok
+Mean Hops = 3.9875  
+ Total Hops = 39875  
+  Number of Nodes = 1000  
+  Number of Requests = 10
+6>                     
+6> 
+6> 
+6> 
+6> main:start(5000,10).
+ok
+Mean Hops = 5.12974  
+ Total Hops = 256487  
+  Number of Nodes = 5000  
+  Number of Requests = 10
+7> 
